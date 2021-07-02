@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mdproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".achievement"></activity>
+        <activity android:name=".divisionTutorial" />
+        <activity android:name=".multiplicationTutorial" />
+        <activity android:name=".subtractionTutorial" />
+        <activity android:name=".leaderboard" />
+        <activity android:name=".gameResult" />
+        <activity android:name=".gameMatching_Level1" />
+        <activity android:name=".gameMatching_Level2" />
+        <activity android:name=".gameMatching_Level3" />
+        <activity android:name=".gameMatching_Level4" />
+        <activity android:name=".gameMatching_Level5" />
+        <activity android:name=".gameMatching_Level6" />
+        <activity android:name=".gameMatching_Level7" />
+        <activity android:name=".gamePTG" />
+        <activity android:name=".gamePTS" />
+        <activity android:name=".levelSelection" />
+        <activity android:name=".game_selection" />
+        <activity android:name=".TutorialQuiz" />
+        <activity android:name=".MathQuiz" />
+        <activity android:name=".additionTutorial" />
+        <activity android:name=".TutorialSelection" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".ProfileSetting" />
+        <activity android:name=".Profile" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterCompleteActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

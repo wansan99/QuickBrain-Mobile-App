@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ProfileSetting">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="Settings"
+                android:textColor="#293542"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="94dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Your Profile"
+                android:textColor="#293542"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnSignout"
+                android:layout_width="76dp"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="94dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/btn_bg_1"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Sign Out"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="76dp"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="94dp"
+                android:layout_marginRight="130dp"
+                android:background="@drawable/btn_bg_1"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="136dp"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingBottom="15dp"
+                    android:text="Username"
+                    android:textColor="#B1B4B5" />
+
+                <EditText
+                    android:id="@+id/editUsername"
+                    android:layout_width="350sp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/textcolumn"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Username"
+                    android:inputType="textPersonName"
+                    android:padding="12sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#c4c4c4"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="Name"
+                    android:textColor="#B1B4B5" />
+
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="350sp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/textcolumn"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:hint="Name"
+                    android:inputType="textEmailAddress"
+                    android:padding="12sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#c4c4c4"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="Old Password"
+                    android:textColor="#B1B4B5" />
+
+                <EditText
+                    android:id="@+id/editOPw"
+                    android:layout_width="350sp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/textcolumn"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:hint="Old Password"
+                    android:inputType="textPassword"
+                    android:padding="12sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#c4c4c4"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="New Password"
+                    android:textColor="#B1B4B5" />
+
+                <EditText
+                    android:id="@+id/editPw"
+                    android:layout_width="350sp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/textcolumn"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:hint="New Password"
+                    android:inputType="textPassword"
+                    android:padding="12sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#c4c4c4"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="Retype New Password"
+                    android:textColor="#B1B4B5" />
+
+                <EditText
+                    android:id="@+id/editRPw"
+                    android:layout_width="350sp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/textcolumn"
+                    android:ems="10"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:hint="Retype New Password"
+                    android:inputType="textPassword"
+                    android:padding="12sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#c4c4c4"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="General"
+                    android:textColor="#293542"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="650dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_column_start"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/soundEffect"
+                        android:layout_width="315dp"
+                        android:layout_height="47dp"
+                        android:fontFamily="@font/open_sans"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="Sound Effect"
+                        android:textColor="#293542"
+                        android:textSize="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/soundEffectSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/soundEffect" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_column_end"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/backgroundMusic"
+                        android:layout_width="315dp"
+                        android:layout_height="47dp"
+                        android:fontFamily="@font/open_sans"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:text="Background Music"
+                        android:textColor="#293542"
+                        android:textSize="15dp"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Switch
+                        android:id="@+id/backgroundMusicSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/backgroundMusic" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_button" />
+    </android.widget.RelativeLayout>
+</ScrollView>

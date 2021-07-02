@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textViewCard11"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard12"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:background="@drawable/text_view_circle3"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard13"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard14"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:background="@drawable/text_view_circle3"
+            android:textColor="#293542"
+            android:text="12" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textViewCard21"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:background="@drawable/text_view_circle3"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard22"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard23"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:background="@drawable/text_view_circle3"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard24"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textViewCard31"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard32"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:background="@drawable/text_view_circle3"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard33"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard34"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:background="@drawable/text_view_circle3"
+            android:text="12" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/textViewCard41"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:background="@drawable/text_view_circle3"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard42"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard43"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:background="@drawable/text_view_circle3"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textViewCard44"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingTop="40dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans_bold"
+            android:textColor="#293542"
+            android:text="12" />
+
+
+    </LinearLayout>
+</LinearLayout>

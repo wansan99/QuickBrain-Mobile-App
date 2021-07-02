@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MD project</string>
+
+    <!--
+    <string-array name="lvl_PTG">
+        <item>No. Picker Level 1</item>
+        <item>No. Picker Level 2</item>
+    </string-array>
+
+    <string-array name="lvl_Matching">
+        <item>Match\'em All Level 1</item>
+        <item>Match\'em All Level 2</item>
+        <item>Match\'em All Level 3</item>
+        <item>Match\'em All Level 4</item>
+        <item>Match\'em All Level 5</item>
+        <item>Match\'em All Level 6</item>
+        <item>Match\'em All Level 7</item>
+    </string-array>
+
+    <string-array name="lvl_Quickmath">
+        <item>QuickMath Level 1</item>
+        <item>QuickMath Level 2</item>
+        <item>QuickMath Level 3</item>
+        <item>QuickMath Level 4</item>
+        <item>QuickMath Level 5</item>
+        <item>QuickMath Level 6</item>
+        <item>QuickMath Level 7</item>
+    </string-array>
+    -->
+
+
+
+</resources>

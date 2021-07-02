@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        tools:context=".achievement">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_button"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Achievement"
+            android:textColor="#293542"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/achievementPanel0"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_bg_7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:paddingStart="30dp"
+                    android:text="Bye Bye Newbie"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="39dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingStart="30dp"
+                    android:text="Complete all tutorials"
+                    android:textColor="#FFFFFF" />
+
+                <ProgressBar
+                    android:id="@+id/pbAchievement1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:max="100"
+                    android:paddingStart="30dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/experience_bar_background" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/badge_bye_newbie" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/achievementPanel1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_bg_7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:paddingStart="30dp"
+                    android:text="Hawkeye"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="39dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingStart="30dp"
+                    android:text="Win 6 stars in No. Picking"
+                    android:textColor="#FFFFFF" />
+
+                <ProgressBar
+                    android:id="@+id/pbAchievement2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:max="100"
+                    android:paddingStart="30dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/experience_bar_background" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginBottom="1dp"
+                    app:srcCompat="@drawable/badge_hawkeye" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/achievementPanel2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_bg_7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:paddingStart="30dp"
+                    android:text="Memory Master"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="39dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingStart="30dp"
+                    android:text="Win 21 stars in Match'em all"
+                    android:textColor="#FFFFFF" />
+
+                <ProgressBar
+                    android:id="@+id/pbAchievement3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:max="100"
+                    android:paddingStart="30dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/experience_bar_background" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    app:srcCompat="@drawable/badge_memory_master" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/achievementPanel3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_bg_7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:paddingStart="30dp"
+                    android:text="Math Guru"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="39dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingStart="30dp"
+                    android:text="Win 21 stars in QuickMath"
+                    android:textColor="#FFFFFF" />
+
+                <ProgressBar
+                    android:id="@+id/pbAchievement4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:max="100"
+                    android:paddingStart="30dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/experience_bar_background" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/badge_math_guru" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/achievementPanel4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/btn_bg_7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:paddingStart="30dp"
+                    android:text="Almighty Brain"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="39dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:paddingStart="30dp"
+                    android:text="Win total 48 stars"
+                    android:textColor="#FFFFFF" />
+
+                <ProgressBar
+                    android:id="@+id/pbAchievement5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:max="100"
+                    android:paddingStart="30dp"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/experience_bar_background" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="3dp"
+                    app:srcCompat="@drawable/badge_almighty_brain" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.widget.RelativeLayout>
+
+</ScrollView>

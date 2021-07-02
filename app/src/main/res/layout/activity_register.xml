@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Create Account"
+        android:textColor="#FBBC05"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="171dp"
+        android:background="@drawable/textcolumn"
+        android:ems="10"
+        android:fontFamily="@font/open_sans_bold"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="12sp"
+        android:textColor="#000000"
+        android:textColorHint="#c4c4c4"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/textcolumn"
+        android:ems="10"
+        android:fontFamily="@font/open_sans_bold"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:padding="12sp"
+        android:textColor="#000000"
+        android:textColorHint="#c4c4c4"
+        android:textSize="14sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:textColorHint="#C4C4C4"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textcolumn"
+            android:ems="10"
+            android:fontFamily="@font/open_sans_bold"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12sp"
+            android:textColor="#000000"
+            android:textColorHint="#C4C4C4"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="335dp"
+        android:textColorHint="#C4C4C4"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/etRPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textcolumn"
+            android:ems="10"
+            android:fontFamily="@font/open_sans_bold"
+            android:hint="Re-type Password"
+            android:inputType="textPassword"
+            android:padding="12sp"
+            android:textColor="#000000"
+            android:textColorHint="#C4C4C4"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="120pt"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btn_bg_1"
+        android:fontFamily="@font/open_sans"
+        android:text="Complete"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:gravity="center"
+        android:text="By signing in to Quick Brain, you agree to our \nTerms and Conditions"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="124dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".gameResult">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="124dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Result"
+        android:textColor="#EA4335"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_GameImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/icon_ptg" />
+
+    <TextView
+        android:id="@+id/tvGameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="233dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Pick the Greatest"
+        android:textColor="#293542"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvGameLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="207dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Level 1"
+        android:textColor="#293542"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="178dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Score: 0"
+        android:textColor="#293542"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnNextLvl"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/btn_bg_6"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Next Level"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_bg_6"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Play Again"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/ic_resultStar"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/tvGameTitle"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_rs0"/>
+
+</android.widget.RelativeLayout>

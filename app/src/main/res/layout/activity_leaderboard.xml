@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".leaderboard">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Leaderboard"
+            android:textColor="#293542"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutLeaderBoardRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_button" />
+
+
+
+        <RadioGroup
+            android:id="@+id/tabGameSelect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tabPTG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Picker"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:checked="true"
+                android:background="@drawable/bg_tab_state"
+                android:button="@android:color/transparent"
+                android:fontFamily="@font/open_sans_bold"/>
+
+            <RadioButton
+                android:id="@+id/tabMatching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match'em All"
+                android:checked="false"
+                android:background="@drawable/bg_tab_state"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:button="@android:color/transparent"
+                android:fontFamily="@font/open_sans_bold"/>
+
+            <RadioButton
+                android:id="@+id/tabQuickMath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QuickMath"
+                android:checked="false"
+                android:background="@drawable/bg_tab_state"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:button="@android:color/transparent"
+                android:fontFamily="@font/open_sans_bold"/>
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/lvlSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="157dp"
+            android:layout_marginEnd="-3dp"
+            android:paddingStart="30dp"
+            android:theme="@style/SpinnerTheme" />
+
+    </android.widget.RelativeLayout>
+
+</ScrollView>

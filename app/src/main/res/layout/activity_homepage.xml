@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Homepage">
+
+    <ImageButton
+        android:id="@+id/btnAchievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_trophy" />
+
+    <ProgressBar
+        android:id="@+id/pbExperience"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="145dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="53dp"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/experience_bar_background" />
+
+    <TextView
+        android:id="@+id/tvLvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/icon_star"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="135dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_avatar_medium" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="46dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Welcome Back! \nWan San Yip"
+        android:textColor="#293542"
+        android:textSize="20sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="272dp"
+        android:background="@drawable/bg_1"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Tutorial"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTutorialCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text="10% Completed"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/startTutorial"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/btn_bg_4"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Start Learning"
+            android:textColor="#628CF5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="418dp"
+        android:background="@drawable/bg_2"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Game Challenge"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPercentageCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text="20% Completed"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/startGame"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/btn_bg_4"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Start Playing"
+            android:textColor="#EA4335"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btnLeaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/icon_leaderboard" />
+
+    <ImageButton
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="342dp"
+        android:layout_marginBottom="28dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/icon_profile" />
+</android.widget.RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".gameMatching_Level4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icon_pause"
+            android:onClick="pauseGame"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="10"
+            android:progressDrawable="@drawable/progressbar_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_timer" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="00:00"
+            android:textColor="#293542" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Score: 0"
+        android:textColor="#293542"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="70dp"/>
+    <include
+        layout="@layout/activity_memory_level4_layout"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewPausedLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="PAUSED"
+        android:textAlignment="center"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:textSize="50sp"
+        android:paddingTop="200dp"
+        android:textColor="@color/black"
+        android:background="@drawable/background"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textViewPausedScoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="#FBBC05"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:paddingTop="270dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_Resume"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Resume"
+        android:padding="15dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:background="@drawable/btn_bg_1"
+        android:drawableLeft="@drawable/ic_resume"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:visibility="gone"
+        android:onClick="pauseGame"/>
+
+    <Button
+        android:id="@+id/btn_Restart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Restart"
+        android:fontFamily="@font/open_sans_bold"
+        android:padding="15dp"
+        android:background="@drawable/btn_bg_1"
+        android:drawableLeft="@drawable/ic_restart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:visibility="gone"
+        android:onClick="restartGame"/>
+
+    <Button
+        android:id="@+id/btn_Exit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Exit"
+        android:padding="15dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:background="@drawable/btn_bg_6"
+        android:drawableLeft="@drawable/ic_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp"
+        android:visibility="gone"
+        android:onClick="exitGame"/>
+
+    <TextView
+        android:id="@+id/textViewCountDownToGameStart"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="100dp"
+        android:paddingTop="200dp"
+        android:text="3"
+        android:fontFamily="@font/open_sans"
+        android:textSize="80sp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:background="@drawable/background"/>
+
+    <TextView
+        android:id="@+id/textViewGameDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Match Them All!"
+        android:textColor="#293542"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/ic_correct"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_correct"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="180dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ic_wrong"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_wrong"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="180dp"
+        android:visibility="gone"/>
+
+
+</android.widget.RelativeLayout>
